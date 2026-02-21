@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\enhle\\OneDrive\\Documents\\PROG7311\\CV_ICE1\\CV_ICE1.csproj",
+      "projectUniqueName": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CV_Repo\\CV_ICE1\\CV_ICE1.csproj",
       "projectName": "CV_ICE1",
-      "projectPath": "C:\\Users\\enhle\\OneDrive\\Documents\\PROG7311\\CV_ICE1\\CV_ICE1.csproj",
+      "projectPath": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CV_Repo\\CV_ICE1\\CV_ICE1.csproj",
       "packagesPath": "C:\\Users\\enhle\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\enhle\\OneDrive\\Documents\\PROG7311\\CV_ICE1\\obj\\",
+      "outputPath": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CV_Repo\\CV_ICE1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
