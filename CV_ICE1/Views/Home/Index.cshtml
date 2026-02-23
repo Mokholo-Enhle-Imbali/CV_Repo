@@ -123,22 +123,22 @@
                 transform: translateX(5px);
             }
 
-    /* Experience Section */
-    .mt-0 ul li {
+    /* Experience & Education Section */
+    .mt-0 ul li, .education-list li {
         background: white;
         border: 1px solid #ddd;
         border-radius: 10px;
         display: block;
     }
 
-        .mt-0 ul li strong {
+        .mt-0 ul li strong, .education-list li strong {
             color: var(--primary);
             display: block;
             font-size: 1.1rem;
             margin-bottom: 5px;
         }
 
-        .mt-0 ul li span {
+        .mt-0 ul li span, .education-list li span {
             color: var(--secondary);
             font-size: 0.9rem;
             font-weight: 600;
@@ -153,7 +153,7 @@
         margin: 0 -10px 20px -10px;
     }
 
-    .col-md-6, .col-md-8 {
+    .col-md-6, .col-md-8, .col-md-4 {
         padding: 0 10px;
         box-sizing: border-box;
     }
@@ -166,13 +166,17 @@
         width: 66.666%;
     }
 
+    .col-md-4 {
+        width: 33.333%;
+    }
+
     /* Mobile Responsive */
     @@media (max-width: 768px) {
         body {
             padding: 15px;
         }
 
-        .col-md-6, .col-md-8 {
+        .col-md-6, .col-md-8, .col-md-4 {
             width: 100%;
         }
 
@@ -205,70 +209,139 @@
 
 <div class="text-center">
     <h1 class="display-4">Enhle-Imbali Naledi Mokholo</h1>
-    <p>Computer Science student and Aspiring network engineer</p>
-    <a asp-action="DownloadCV" class="btn btn-primary" >Download CV</a>
+    <p>Final Year Computer Science Student and Aspiring Network Engineer</p>
+    <a asp-action="DownloadCV" class="btn btn-primary">Download CV</a>
 </div>
 
- <br/>
- <br/>
+<br />
+<br />
 
-
-
+<!-- First Row: Profile and Technical Skills -->
 <div class="row">
-
-<div class="col-md-6">
-    <div class="card" style="max-width: 540px;">
-        <div class="row g-0">
-            <div class="col-md-4" style="height: 200px; overflow: hidden;">
-                <img src="~/Images/professional_photo.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Profile pic">
-             </div>
-             <div class="col-md-8">
-                 <div class="card-body">
-                <h5 class="card-title">Enhle-Imbali Naledi Mokholo</h5>
-                <p class="card-text">
-                    is a passionate computer science student who aspires to be a network engineer.
-                    They have a strong desire to achieve the most optimal results, through team collaboration and efficiency.
-                </p>
-                 </div>
-             </div>
-         </div>
-    </div>
-</div>
-
+    <!-- Profile Card with Image -->
     <div class="col-md-6">
-        <div class="card" style="max-width: 540px;">
-            <div class="row g-0">
+        <div class="card h-100">
+            <div class="row g-0 h-100">
+                <div class="col-md-4" style="height: 100%; min-height: 250px; overflow: hidden;">
+                    <img src="~/Images/professional_photo.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Profile pic">
+                </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title">Skills</h5>
+                        <h5 class="card-title">About Me</h5>
                         <p class="card-text">
-                           
-                            <div class="row">
-                                <div class="col-md-6">
-                            <ul>
-                                <li>Network Security</li>
-                                <li>Object Oriented Programming</li>
-                                <li>Understanding of Network Protocols</li>
-                                <li>Unit Testing</li>
-                                <li>Program Coding</li>
-                                <li>Data Structures</li>
-                                <li>Understanding of Office365</li>
-                            </ul>
-                                </div>
-
-                                <div class="col-md-6">
-                            <ul>
-                                <li>Cloud Technologies</li>
-                                <li>Critical Thinking</li>
-                                <li>Problem Solving</li>
-                                <li>Database Management (SQL and NoSQL)</li>
-                                <li>Able to collaborate</li>
-                            </ul>
-                                 </div>
-
-
-                            </div>
+                            I am a passionate computer science student who aspires to be a network engineer.
+                            I have a strong desire to achieve the most optimal results, through team collaboration and efficiency.
+                            I currently study Computer Sciences at Emeris University. I came into IT because I've always had a keen curiousity for
+                            all things computers.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Technical Skills Card -->
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Technical Skills</h5>
+                <ul>
+                    <li>Network Security knowledge</li>
+                    <li>Java Programming Knowledge</li>
+                    <li>C# Programming Knowledge</li>
+                    <li>.NET Framework knowledge</li>
+                    <li>Git and GitHub Knowledge</li>
+                    <li>Understanding of Network Protocols</li>
+                    <li>Software Development Skills</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Second Row: Soft Skills, Education, and Experience -->
+<div class="row">
+    <!-- Soft Skills Card -->
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Soft Skills</h5>
+                <ul>
+                    <li>Collaboration Skills</li>
+                    <li>Does well in Teams</li>
+                    <li>Understanding of Office 365</li>
+                    <li>Problem Solving</li>
+                    <li>Communication Skills</li>
+                    <li>Time Management</li>
+                    <li>Adaptability</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Card (NEW) -->
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Education</h5>
+                <ul class="education-list">
+                    <li>
+                        <strong>Bachelor of Computer and Information Sciences in Application Development</strong><br />
+                        <span>Emeris University | 2024 - Present</span><br />
+                        <small style="color: #666;">Final Year Student</small>
+                    </li>
+                    <li>
+                        <strong>High School Diploma</strong><br />
+                        <span>The Kings College and Preparatory School | 2023</span><br />
+                        <small style="color: #666;">Matriculated with Bachelor's Pass</small>
+                    </li>
+                    <li>
+                        <strong>Relevant Coursework (BCAD)</strong><br />
+                        <span>Networking Fundamentals, Data Structures, Database Systems, .NET Framwork, Java Programming</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Card -->
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Experience (From outside and inside university)</h5>
+                <ul>
+                    <li>
+                        <strong>Meals On Wheels Ministry</strong><br />
+                        <span>2023-2024</span><br />
+                        <small style="color: #666;">Volunteer</small>
+                    </li>
+                    <li>
+                        <strong>Java Programming Tutor</strong><br />
+                        <span>2025-2026</span><br />
+                        <small style="color: #666;">Peer Tutoring Program</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Third Row: GitHub Projects (Full Width) -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">GitHub Projects</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="project-card text-center">
+                            <a href="https://github.com/Mokholo-Enhle-Imbali/CLDV_6212_ST10443720.git" target="_blank" class="btn btn-primary" style="width: 100%; margin-bottom: 10px;">E-commerce Website</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="project-card text-center">
+                            <a href="https://github.com/IIEMSA/prog6212-part1-Mokholo-Enhle-Imbali.git" target="_blank" class="btn btn-primary" style="width: 100%;">Administrator Site</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -276,24 +349,50 @@
     </div>
 </div>
 
-<div class="row mt-0">
-    <div class="col-md-8">
-        <div class="card" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Experience</h5>
-                        <p class="card-text">
-                          <ul>
-                              <li>Meals On Wheels Ministry (2023-2024)
-                              <li>Java Programming Tutor (2025-2026)</li>
-                          </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!-- Add this to your CSS for better responsiveness -->
+<style>
+    /* Additional styles for better layout */
+    .col-md-12 {
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
 
+    .project-card {
+        padding: 10px;
+    }
 
+    .h-100 {
+        height: 100%;
+    }
+
+    /* Ensure consistent card heights in each row */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        .row > [class*='col-'] {
+            display: flex;
+            flex-direction: column;
+        }
+
+    /* Education list specific styling */
+    .education-list li {
+        padding: 15px;
+        margin-bottom: 15px;
+        background: var(--light);
+        border-radius: 10px;
+        list-style: none;
+    }
+
+        .education-list li:last-child {
+            margin-bottom: 0;
+        }
+
+    .education-list small {
+        display: block;
+        margin-top: 5px;
+        font-style: italic;
+    }
+</style>
