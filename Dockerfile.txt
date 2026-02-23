@@ -1,13 +1,15 @@
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
-# Copy the csproj file from the CV_ICE1 folder
+# Copy the csproj file and restore
 COPY CV_ICE1/*.csproj ./
 RUN dotnet restore
 
-# Copy everything else from the CV_ICE1 folder
+# Copy everything else
 COPY CV_ICE1/. ./
-RUN dotnet publish -c Release -o out
+
+# Build and publish - target the .csproj file explicitly
+RUN dotnet publish "CV_ICE1.csproj" -c Release -o out
 
 # Build runtime image
 FROM mcr.microsoft.com/dotnet/aspnet:9.0
