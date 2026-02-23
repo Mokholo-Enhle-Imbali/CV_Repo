@@ -146,6 +146,44 @@
             margin-bottom: 5px;
         }
 
+    /* Contact List Styling */
+    .contact-list li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--light);
+        border-radius: 50px;
+        padding: 12px 20px;
+        margin-bottom: 12px;
+    }
+
+        .contact-list li:hover {
+            background: var(--secondary);
+            color: white;
+            transform: translateX(5px);
+        }
+
+            .contact-list li:hover a {
+                color: white;
+            }
+
+    .contact-icon {
+        font-size: 1.3rem;
+        min-width: 30px;
+        text-align: center;
+    }
+
+    .contact-list a {
+        color: #333;
+        text-decoration: none;
+        flex: 1;
+        word-break: break-all;
+    }
+
+    .contact-list li:hover .contact-icon {
+        color: white;
+    }
+
     /* Layout */
     .row {
         display: flex;
@@ -153,7 +191,7 @@
         margin: 0 -10px 20px -10px;
     }
 
-    .col-md-6, .col-md-8, .col-md-4 {
+    .col-md-6, .col-md-8, .col-md-4, .col-md-3 {
         padding: 0 10px;
         box-sizing: border-box;
     }
@@ -170,13 +208,17 @@
         width: 33.333%;
     }
 
+    .col-md-3 {
+        width: 25%;
+    }
+
     /* Mobile Responsive */
     @@media (max-width: 768px) {
         body {
             padding: 15px;
         }
 
-        .col-md-6, .col-md-8, .col-md-4 {
+        .col-md-6, .col-md-8, .col-md-4, .col-md-3 {
             width: 100%;
         }
 
@@ -232,7 +274,7 @@
                             I am a passionate computer science student who aspires to be a network engineer.
                             I have a strong desire to achieve the most optimal results, through team collaboration and efficiency.
                             I currently study Computer Sciences at Emeris University. I came into IT because I've always had a keen curiousity for
-                            all things computers.
+                            all things computers, especially Nework engineering.
                         </p>
                     </div>
                 </div>
@@ -249,6 +291,9 @@
                     <li>Network Security knowledge</li>
                     <li>Java Programming Knowledge</li>
                     <li>C# Programming Knowledge</li>
+                    <li>Linux Commandline Knowlege</li>
+                    <li>Virtual Machine Deployment</li>
+                    <li>Kali Linux Understanding</li>
                     <li>.NET Framework knowledge</li>
                     <li>Git and GitHub Knowledge</li>
                     <li>Understanding of Network Protocols</li>
@@ -279,25 +324,25 @@
         </div>
     </div>
 
-    <!-- Education Card (NEW) -->
+    <!-- Education Card -->
     <div class="col-md-4">
         <div class="card h-100">
             <div class="card-body">
                 <h5 class="card-title">Education</h5>
                 <ul class="education-list">
                     <li>
-                        <strong>Bachelor of Computer and Information Sciences in Application Development</strong><br />
+                        <strong>Bachelor of Computer Science</strong><br />
                         <span>Emeris University | 2024 - Present</span><br />
-                        <small style="color: #666;">Final Year Student</small>
+                        <small style="color: #666;">Final Year Student (Expected Graduation: 2027)</small>
                     </li>
                     <li>
                         <strong>High School Diploma</strong><br />
-                        <span>The Kings College and Preparatory School | 2023</span><br />
+                        <span>The Kings College and Preparatory School| 2016 - 2023</span><br />
                         <small style="color: #666;">Matriculated with Bachelor's Pass</small>
                     </li>
                     <li>
-                        <strong>Relevant Coursework (BCAD)</strong><br />
-                        <span>Networking Fundamentals, Data Structures, Database Systems, .NET Framwork, Java Programming</span>
+                        <strong>Relevant Coursework</strong><br />
+                        <span>Networking Fundamentals, Data Structures, Web Development, Database Systems</span>
                     </li>
                 </ul>
             </div>
@@ -313,12 +358,12 @@
                     <li>
                         <strong>Meals On Wheels Ministry</strong><br />
                         <span>2023-2024</span><br />
-                        <small style="color: #666;">Volunteer</small>
+                        <small style="color: #666;">Volunteering to make food for the elderrly</small>
                     </li>
                     <li>
                         <strong>Java Programming Tutor</strong><br />
                         <span>2025-2026</span><br />
-                        <small style="color: #666;">Peer Tutoring Program</small>
+                        <small style="color: #666;">Peer Tutoring Program (Tutoring First Years)</small>
                     </li>
                 </ul>
             </div>
@@ -326,10 +371,38 @@
     </div>
 </div>
 
-<!-- Third Row: GitHub Projects (Full Width) -->
+<!-- Third Row: Contact Card and GitHub Projects -->
 <div class="row">
-    <div class="col-md-12">
-        <div class="card">
+    <!-- Contact Card (NEW) -->
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">Contact Information</h5>
+                <ul class="contact-list">
+                    <li>
+                        <span class="contact-icon">📧</span>
+                        <a href="mailto:ST10443720@myemeris.edu.za">ST10443720@myemeris.edu.za</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">💼</span>
+                        <a href="https://www.linkedin.com/in/enhle-imbali-mokholo-86228b29b/" target="_blank">linkedin.com/in/enhle-mokholo</a>
+                    </li>
+                    <li>
+                        <span class="contact-icon">📍</span>
+                        <span>Johannesburg, South Africa</span>
+                    </li>
+                    <li>
+                        <span class="contact-icon">💻</span>
+                        <a href="https://github.com/Mokholo-Enhle-Imbali" target="_blank">github.com/Mokholo-Enhle-Imbali</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- GitHub Projects Card (now takes remaining space) -->
+    <div class="col-md-8">
+        <div class="card h-100">
             <div class="card-body">
                 <h5 class="card-title">GitHub Projects</h5>
                 <div class="row">
@@ -342,6 +415,13 @@
                         <div class="project-card text-center">
                             <a href="https://github.com/IIEMSA/prog6212-part1-Mokholo-Enhle-Imbali.git" target="_blank" class="btn btn-primary" style="width: 100%;">Administrator Site</a>
                         </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <p style="color: #666; margin-top: 15px; text-align: center;">
+                            <small>Check my GitHub for more projects and contributions</small>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -394,5 +474,10 @@
         display: block;
         margin-top: 5px;
         font-style: italic;
+    }
+
+    /* Add a little spacing between rows */
+    .mt-3 {
+        margin-top: 1rem;
     }
 </style>
